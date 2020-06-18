@@ -1,21 +1,18 @@
-nterms = int(input("How many terms? "))
-
-# first two terms
-n1, n2 = 0, 1
-count = 0
-
-# check if the number of terms is valid
-if nterms <= 0:
-   print("Please enter a positive integer")
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
-else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       print(n1)
-       nth = n1 + n2
-       # update values
-       n1 = n2
-       n2 = nth
-       count += 1
+a=int(input("Enter any no"))
+#b=1
+#c=1
+#d=0
+for x in range(0,a+1):
+ if x==0:
+    print("0")
+ elif x==1:
+    b=1
+    print(b)
+ elif x==2:
+    c=1
+    print(c)
+ else:
+    d=b+c
+    print(d)
+    b=c
+    c=d
